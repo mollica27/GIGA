@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-gray: #f9f6ff;
+    --text-gray: #a8a4a4;
+    --color-primary:#000000;
+    --white: #ffff;
+    --text-light-gray: rgb(129, 127, 127);
+    --color-secundary: #3ca300;
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a, a:hover  {
+    text-decoration: none;
+    color: unset;
+}
+
+.GigaMais-contact-container {
+    display: flex;
+    align-items: center; 
+     
+}
+
+.GigaMais-contact-container img {
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px 10px 10px 10px;
+    width: 100px;
+}
+
+.GigaMais-contact-container a {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--color-primary);
+    background: var(--bg-gray);
+}
+
+
+main.cards {
+    display: flex;
+    padding: 32px;
+    
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: var(--white);
+}
+
+main.cards section.card.teste button {
+    background: linear-gradient(to right, #3ca300,#2d7504 );
+}
+
+main.cards section.card.potencia button {
+    background: linear-gradient(to right, #3ca300,#2d7504 );
+}
+
+main.cards section.card.sem button {
+    background: linear-gradient(to right, #3ca300,#2d7504 );
+}
+
+main.cards section.card.teste {
+    box-shadow: 20px 20px 50px -30px #5cc753;
+}
+
+main.cards section.card.potencia {
+    box-shadow: 20px 20px 50px -30px #5cc753;
+}
+
+main.cards section.card.sem {
+    box-shadow: 20px 20px 50px -30px #5cc753;
+}
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+}
